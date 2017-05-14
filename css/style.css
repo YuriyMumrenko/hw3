@@ -7,15 +7,21 @@
 
 body {
 
-   background: #0074A5 url("../images/background.jpg") repeat-x; 
+	/*background: #0074A5 url("../images/background.jpg") repeat-x; */
+
+
+	background: #0c739f 
+	linear-gradient( to bottom, #128aa7, #128aa7 30px, #5ef0ff 30px, #5ef0ff 31px, #10cde1 31px, #fff 175px, #40c6d3 175px, #0c739f 1020px);
+	background-repeat: no-repeat;
+
 }
 
 .wrapper {
 
- width: 1002px;
- margin:0 auto;
- background: #FFFFFF;
- box-shadow: 0 0 5px rgba(0,0,0,1);
+	width: 1002px;
+	margin:0 auto;
+	background: #FFFFFF;
+	box-shadow: 0 0 5px rgba(0,0,0,1);
 
 } 
 
@@ -25,51 +31,58 @@ body {
 	height: 176px;
 	width: 302px;
 	background:url("../images/logo.jpg"); 
+	
 }
+
 .contacts{
-	position: relative;
-	left: 82%;
-	height: 103px;
+
+	font-size: 12px;
+	font-family: Tahoma, sans-serif;
+	color: #52C7D2;
+	line-height: 1.5;
+
+	margin: 10px 0 20px 535px;
 	width: 160px;
-	background: url("../images/contacts.jpg");
+	height: 70px;
+	display: inline-block;
 }
 
 .countries{
-    float: right;
+	float: right;
 
 }
 .foto{
-    background:url("../images/foto.jpg"); 
-    height: 238px;
-    border: 1px solid #5196AB;
+	background:url("../images/foto.jpg"); 
+	height: 238px;
+	border: 1px solid #5196AB;
 
-    clear: both;
+	clear: both;
 
 }
 
 /*---------------- Выпадающее меню ----------------------*/
 
 ul {
-    display: block;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    width: 1002px;
-    text-align: center;
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 1002px;
+	text-align: center;
 
-    
-    box-shadow: 0 5px 1px -1px black;
+
+	box-shadow: 0 5px 1px -1px black;
 }
 ul:after {
-    display: block;
-    content: ' ';
-    clear: both;
-    float: none;
+	display: block;
+	content: ' ';
+	clear: both;
+	float: none;
 }
 ul.menu > li {
-    float: left;
-    position: relative;
-    width: 143px;
+	float: left;
+	position: relative;
+	width: 143px;
 }
 
 /* рисуем треугольники (указатели) во вкладках меню */
@@ -97,106 +110,111 @@ border-top: 6px solid #E4E4E4;
 /*--------------------------------------------------------*/
 
 ul.menu > li > a {
-    display: block;
-    padding: 6px;
-    color: white;
-    background-color: #313131;
-    text-decoration: none;
-    
+	display: block;
+	padding: 6px;
+	color: white;
+	background-color: #313131;
+	text-decoration: none;
+
 }
 /*
 ul.menu > li > a:hover {
     background-color: hsla(0, 0%, 20%, .8);
     }*/
     ul.submenu {
-        display: none;
-        position: absolute;
-        width: 141px;
-        top: 32px;
-        left: 0;
-        background-color: white;
-        border-top: 2px solid black;
-        box-shadow: 0 10px 5px -5px black;
+    	display: none;
+    	position: absolute;
+    	width: 141px;
+    	top: 30px;
+    	left: 0;
+    	background-color: white;
+    	border-top: 2px solid black;
+    	box-shadow: 0 10px 5px -5px black;
     }
     ul.submenu > li {
-        display: block;
+    	display: block;
     }
     ul.submenu > li > a {
-        display: block;
-        padding: 5px;
-        color: white;
-        background-color: #313131;
-        text-decoration: none;
+    	display: block;
+    	padding: 5px;
+    	color: white;
+    	background-color: #313131;
+    	text-decoration: none;
     }
     ul.submenu > li > a:hover {
-        text-decoration: underline;
+    	text-decoration: underline;
 
     }
 
     ul.menu > li:hover > ul.submenu {
-        display: block;
+    	display: block;
     }
     /*------------------------------------------*/
     .menu{
 
-        position: relative;
-        z-index: 1;
+    	position: relative;
+    	z-index: 1;
     } 
 
     /*-----------------------------------------*/
 
     .fon {        /* благодаря фону создаем иллюзию одинаковой высоты колонок*/
-     width: 1002px;
-     background: url("../images/fon.jpg") repeat-y;
-     padding: 10px 0;
-     box-shadow: 0 8px 4px -4px black;
- }
-
- .leftColumn{
-     width: 21%;
-     float: left;
-     text-align: center;
-
- }
-
- p{
-     text-indent: 10px;
-     border-bottom: 1px solid #C8CACF;
-     
-     line-height: 1.5;
-     word-spacing: 1px;
-
-     text-align: left;
-     padding-left: 3px;
-     padding-right: 3px;
+    	width: 1002px;
+    	background: url("../images/fon.jpg") repeat-y;
+    	padding: 10px 0;
+    	box-shadow: 0 8px 4px -4px black;
 
 
- }
- .centerColumn{
-     width: 58%;
-     float: left;
-     visibility: hidden;
+    }
 
- }
- .rightColumn{
-     width: 21%;
-     float:right;
-     text-align: center;
-     
- }
+    .fon:after {
+    	display: block;
+    	content: ' ';
+    	clear: both;
+    	float: none;
+    }
+
+    .leftColumn{
+    	width: 21%;
+    	float: left;
+    	text-align: center;
+
+    }
+
+    p{
+    	text-indent: 10px;
+    	border-bottom: 1px solid #C8CACF;
+
+    	line-height: 1.5;
+    	word-spacing: 1px;
+
+    	text-align: left;
+    	padding-left: 3px;
+    	padding-right: 3px;
+
+    }
+    .centerColumn{
+    	width: 58%;
+    	float: left;
+    	visibility: hidden;
 
 
- .clear{
 
-   clear: both; 
-}
+    }
+    .rightColumn{
+    	width: 21%;
+    	float:right;
+    	text-align: center;
 
-.footer{
+    }
 
-    text-align: center;
-    color: #CBCFD4;
-    padding:10px;
-    width: 400px;
-    margin:0 auto;
-}
+    .footer{
+
+    	text-align: center;
+    	color: #CBCFD4;
+    	padding:10px;
+    	width: 400px;
+    	margin:0 auto;
+    	
+    }
 
